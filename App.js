@@ -21,7 +21,7 @@ export default function App() {
       <ScrollView>
         {
           posts.map((post) => (
-            <View>
+            <View key={post.id}>
 
               <View style={styles.headerPost}>
                 <Text>{post.user}</Text>
